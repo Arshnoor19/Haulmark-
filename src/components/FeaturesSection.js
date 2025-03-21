@@ -6,6 +6,8 @@ import {
   FaSchool,
   FaGraduationCap,
   FaUserGraduate,
+  FaHandsHelping,
+  FaAlgolia,
 } from "react-icons/fa";
 import "./FeaturesSection.css";
 
@@ -14,10 +16,30 @@ const FeaturesSection = () => {
     <section className="features-section">
       {/* Section 1: Funding for International Students */}
       <div className="funding-section">
-        <h2>Funding for Students</h2>
-        <p>loerem ipsum</p>
+        <h2>Flexible</h2>
+        <h2>Funding Options</h2>
+
+        <p>
+          Fixed-rate loans from US$2,001 to US$100,000 total at competitive
+          interest rates with up to 0.25% in interest rate discounts. Plus – we
+          don’t mind if you have loans from other lenders; you can still apply
+          for an MPOWER loan!
+        </p>
         <div className="funding-grid">
           <div className="funding-card">
+            <div className="card-icon">
+              <FaHandsHelping size={40} /> {/* Add the icon */}
+            </div>
+            <h3>Support Along the Way</h3>
+            <p>
+              Free visa support letters, exclusive career strategy services and
+              the potential for a conditional loan offer in a matter of days.
+            </p>
+          </div>
+          <div className="funding-card">
+            <div className="card-icon">
+              <FaAlgolia size={40} /> {/* Add the icon */}
+            </div>
             <h3>Our Fastest Process Yet</h3>
             <p>
               In just 30 seconds, see if you’re eligible to apply. From our
@@ -26,6 +48,9 @@ const FeaturesSection = () => {
             </p>
           </div>
           <div className="funding-card">
+            <div className="card-icon">
+              <FaHandsHelping size={40} /> {/* Add the icon */}
+            </div>
             <h3>Support Along the Way</h3>
             <p>
               Free visa support letters, exclusive career strategy services and
@@ -33,6 +58,9 @@ const FeaturesSection = () => {
             </p>
           </div>
           <div className="funding-card">
+            <div className="card-icon">
+              <FaUsers size={40} /> {/* Add the icon */}
+            </div>
             <h3>Funding at Your Fingertips</h3>
             <p>
               Secure your loan faster than ever with MPOWER’s quickest
@@ -80,13 +108,19 @@ const FeaturesSection = () => {
         </div>
       </div>
 
-      <div className="application-section">
-        <h2>Ready to Take the Next Step?</h2>
-        <p>
-          Start your application today and join thousands of students who have
-          achieved their dreams with Financing.
-        </p>
-        <button className="application-button">Start Your Application</button>
+      <div className="application-box">
+        <div className="application-section">
+          <div className="application-content">
+            <h2>Ready to Take the Next Step?</h2>
+            <p>
+              Start your application today and join thousands of students who
+              have achieved their dreams with Financing.
+            </p>
+            <button className="application-button">
+              Start Your Application
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* Section 3: Newsletter Signup */}
