@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">Haul Mark Consulting</div>
+      <div className="logo">Hull Advisory</div>
 
       {/* Hamburger Icon for Mobile */}
       <div className="hamburger" onClick={toggleMobileMenu}>

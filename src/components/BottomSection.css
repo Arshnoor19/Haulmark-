@@ -1,0 +1,112 @@
+/* Bottom Section Styles */
+.bottom-section {
+  margin-top: 30px;
+
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 60px 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.heading-color {
+  color: #3d348b;
+}
+
+.bottom-content {
+  border-top: 4px solid #3d348b;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #ddd; /* Add a border between columns and refinance section */
+}
+
+.bottom-column {
+  text-align: left;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.bottom-column:last-child {
+  margin-right: 0;
+}
+
+.bottom-column h3 {
+  font-size: 20px;
+  font-weight: 800; /* Bold heading */
+  margin-bottom: 20px;
+  color: #3d348b; /* Dark gray for headings */
+}
+
+.bottom-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-column ul li {
+  margin-bottom: 10px;
+}
+
+.bottom-column ul li a {
+  text-decoration: none;
+  color: #555; /* Light gray for links */
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.bottom-column ul li a:hover {
+  color: #c13450; /* Red on hover */
+}
+
+/* Refinance Section */
+.refinance-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.refinance-section h3 {
+  font-size: 20px;
+  font-weight: 700; /* Bold heading */
+  margin-bottom: 20px;
+  color: #333; /* Dark gray for headings */
+}
+
+.refinance-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between links */
+}
+
+.refinance-section ul li a {
+  text-decoration: none;
+  color: #555; /* Light gray for links */
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.refinance-section ul li a:hover {
+  color: #c13450; /* Red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bottom-content {
+    flex-direction: column;
+  }
+
+  .bottom-column {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .refinance-section ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

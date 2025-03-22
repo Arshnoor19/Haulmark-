@@ -16,8 +16,7 @@ const FeaturesSection = () => {
     <section className="features-section">
       {/* Section 1: Funding for International Students */}
       <div className="funding-section">
-        <h2>Flexible</h2>
-        <h2>Funding Options</h2>
+        <h2>Flexible Funding Options</h2>
 
         <p>
           Fixed-rate loans from US$2,001 to US$100,000 total at competitive
@@ -76,35 +75,68 @@ const FeaturesSection = () => {
         <div className="feature-card">
           <FaCheckCircle className="feature-icon" />
           <h3>100%</h3>
-          <p>Digital loan application process</p>
+          <p>
+            A significant number of students reported that receiving a loan
+            played a crucial role in enabling them to pursue their education, as
+            it provided the necessary financial support to cover tuition fees,
+            living expenses, and other academic costs, ultimately allowing them
+            to focus on their studies without constant financial stress.
+          </p>
         </div>
         <div className="feature-card">
           <FaUsers className="feature-icon" />
           <h3>20,000+</h3>
-          <p>Students funded</p>
+          <p>
+            A significant number of students reported that receiving a loan
+            played a crucial role in enabling them to pursue their education, as
+            it provided the necessary financial support to cover tuition fees,
+            living expenses, and other academic costs, ultimately allowing them
+            to focus on their studies without constant financial stress.
+          </p>
         </div>
         <div className="feature-card">
           <FaGlobe className="feature-icon" />
           <h3>190+</h3>
-          <p>Eligible countries of citizenship</p>
+          <p>
+            A significant number of students reported that receiving a loan
+            played a crucial role in enabling them to pursue their education, as
+            it provided the necessary financial support to cover tuition fees,
+            living expenses, and other academic costs, ultimately allowing them
+            to focus on their studies without constant financial stress.
+          </p>
         </div>
         <div className="feature-card">
           <FaSchool className="feature-icon" />
           <h3>500+</h3>
-          <p>Eligible U.S. and Canadian schools</p>
+          <p>
+            A significant number of students reported that receiving a loan
+            played a crucial role in enabling them to pursue their education, as
+            it provided the necessary financial support to cover tuition fees,
+            living expenses, and other academic costs, ultimately allowing them
+            to focus on their studies without constant financial stress.
+          </p>
         </div>
         <div className="feature-card">
           <FaGraduationCap className="feature-icon" />
           <h3>91%</h3>
           <p>
-            Of students indicate an loan was instrumental in their ability to
-            study abroad
+            A significant number of students reported that receiving a loan
+            played a crucial role in enabling them to pursue their education, as
+            it provided the necessary financial support to cover tuition fees,
+            living expenses, and other academic costs, ultimately allowing them
+            to focus on their studies without constant financial stress.
           </p>
         </div>
         <div className="feature-card">
           <FaUserGraduate className="feature-icon" />
           <h3>45%</h3>
-          <p>Of customers are first-generation college students</p>
+          <p>
+            A significant number of students reported that receiving a loan
+            played a crucial role in enabling them to pursue their education, as
+            it provided the necessary financial support to cover tuition fees,
+            living expenses, and other academic costs, ultimately allowing them
+            to focus on their studies without constant financial stress.
+          </p>
         </div>
       </div>
 

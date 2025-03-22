@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection"; // Import the HeroSection co
 import FeaturesSection from "./components/FeaturesSection"; // Import the FeaturesSection component
 import Footer from "./components/Footer"; // Import the Footer component
 import "./App.css"; // Import global styles
+import BottomSection from "./components/BottomSection";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
 
       {/* Features Section */}
       <FeaturesSection />
+
+      {/* Bottom Menu */}
+      <BottomSection />
 
       {/* Footer */}
       <Footer />
