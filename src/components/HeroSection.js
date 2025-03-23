@@ -5,7 +5,9 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h1>Fund your education.</h1>
+        <h1>
+          Fund your <div>Education!</div>
+        </h1>
         <p className="hero-subtitle">Live your dream.</p>
         <p className="hero-description">
           Apply now for a loan to study in the U.S. or Canada and make your

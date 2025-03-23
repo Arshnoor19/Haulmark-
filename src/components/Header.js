@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa"; // Import hamburger and close icons
+import { FaBars, FaTimes, FaAngleDown } from "react-icons/fa"; // Import hamburger and close icons
 import "./Header.css";
 
 const Header = () => {
@@ -32,9 +32,16 @@ const Header = () => {
             onMouseLeave={() => toggleDropdown(null)}
             onClick={() => toggleDropdown(1)} // Add click handler for mobile
           >
-            <a href="/who-are-we">Who Are We</a>
+            <a href="/who-are-we">
+              Who Are We
+              <FaAngleDown className="dropdownicon" />
+            </a>
             {dropdown === 1 && (
-              <ul className="dropdown-menu">
+              <ul
+                className="dropdown-menu"
+                onMouseEnter={() => toggleDropdown(1)} // Keep dropdown open when hovering over it
+                onMouseLeave={() => toggleDropdown(null)} // Hide dropdown when leaving it
+              >
                 <li>
                   <a href="/who-are-we/our-story">Our Story</a>
                 </li>
@@ -54,7 +61,10 @@ const Header = () => {
             onMouseLeave={() => toggleDropdown(null)}
             onClick={() => toggleDropdown(2)} // Add click handler for mobile
           >
-            <a href="/talk-to-us">Talk to Us</a>
+            <a href="/talk-to-us">
+              Talk to Us
+              <FaAngleDown className="dropdownicon" />
+            </a>
             {dropdown === 2 && (
               <ul className="dropdown-menu">
                 <li>
@@ -76,7 +86,10 @@ const Header = () => {
             onMouseLeave={() => toggleDropdown(null)}
             onClick={() => toggleDropdown(3)} // Add click handler for mobile
           >
-            <a href="/follow-us">Follow Us</a>
+            <a href="/follow-us">
+              Follow Us
+              <FaAngleDown className="dropdownicon" />
+            </a>
             {dropdown === 3 && (
               <ul className="dropdown-menu">
                 <li>
@@ -98,7 +111,10 @@ const Header = () => {
             onMouseLeave={() => toggleDropdown(null)}
             onClick={() => toggleDropdown(4)} // Add click handler for mobile
           >
-            <a href="/legal">Legal</a>
+            <a href="/legal">
+              Legal
+              <FaAngleDown className="dropdownicon" />
+            </a>
             {dropdown === 4 && (
               <ul className="dropdown-menu">
                 <li>
@@ -120,7 +136,10 @@ const Header = () => {
             onMouseLeave={() => toggleDropdown(null)}
             onClick={() => toggleDropdown(5)} // Add click handler for mobile
           >
-            <a href="/what-we-offer">What We Offer</a>
+            <a href="/what-we-offer">
+              What We Offer
+              <FaAngleDown className="dropdownicon" />
+            </a>
             {dropdown === 5 && (
               <ul className="dropdown-menu">
                 <li>
@@ -142,7 +161,10 @@ const Header = () => {
             onMouseLeave={() => toggleDropdown(null)}
             onClick={() => toggleDropdown(6)} // Add click handler for mobile
           >
-            <a href="/third-party-offers">Third Party Offers</a>
+            <a href="/third-party-offers">
+              Third Party Offers
+              <FaAngleDown className="dropdownicon" />
+            </a>
             {dropdown === 6 && (
               <ul className="dropdown-menu">
                 <li>
@@ -166,7 +188,10 @@ const Header = () => {
             onMouseLeave={() => toggleDropdown(null)}
             onClick={() => toggleDropdown(7)} // Add click handler for mobile
           >
-            <a href="/investor-corner">Investor Corner</a>
+            <a href="/investor-corner">
+              Investor Corner
+              <FaAngleDown className="dropdownicon" />
+            </a>
             {dropdown === 7 && (
               <ul className="dropdown-menu">
                 <li>
@@ -192,7 +217,10 @@ const Header = () => {
             onMouseLeave={() => toggleDropdown(null)}
             onClick={() => toggleDropdown(8)} // Add click handler for mobile
           >
-            <a href="/knowledge-products">Knowledge Products</a>
+            <a href="/knowledge-products">
+              Knowledge Products
+              <FaAngleDown className="dropdownicon" />
+            </a>
             {dropdown === 8 && (
               <ul className="dropdown-menu">
                 <li>
