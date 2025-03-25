@@ -23,7 +23,7 @@ const FeaturesSection = () => {
           Fixed-rate loans from US$2,001 to US$100,000 total at competitive
           interest rates with up to 0.25% in interest rate discounts. Plus – we
           don’t mind if you have loans from other lenders; you can still apply
-          for an MPOWER loan!
+          for an loan!
         </p>
         <div className="funding-grid">
           <div className="funding-card">
@@ -63,8 +63,8 @@ const FeaturesSection = () => {
             </div>
             <h3>Funding at Your Fingertips</h3>
             <p>
-              Secure your loan faster than ever with MPOWER’s quickest
-              application yet, available worldwide. Apply today for funding!
+              Secure your loan faster than ever with quickest application yet,
+              available worldwide. Apply today for funding!
             </p>
           </div>
         </div>
@@ -166,10 +166,7 @@ const FeaturesSection = () => {
             <FaLink size={15} />
           </button>
         </div>
-        <p className="consent-message">
-          By submitting your email address, you consent to receive email
-          communication from US.
-        </p>
+        <p className="consent-message"></p>
       </div>
 
       {/* Section 4: Start Your Application */}
