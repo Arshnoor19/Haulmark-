@@ -8,6 +8,7 @@ import {
   FaUserGraduate,
   FaHandsHelping,
   FaAlgolia,
+  FaLink,
 } from "react-icons/fa";
 import "./FeaturesSection.css";
 
@@ -157,21 +158,14 @@ const FeaturesSection = () => {
 
       {/* Section 3: Newsletter Signup */}
       <div className="newsletter-section">
-        <h2>Sign up for our newsletter!</h2>
-        <form className="newsletter-form">
-          <div className="form-group">
-            <input type="text" placeholder="First name" required />
-          </div>
-          <div className="form-group">
-            <input type="text" placeholder="Last name" required />
-          </div>
-          <div className="form-group">
-            <input type="email" placeholder="E-mail Address" required />
-          </div>
+        <div className="newsletter-form">
+          <h2>Join the Live Webinars!</h2>
+
           <button type="submit" className="submit-button">
-            SUBMIT
+            CONNECT
+            <FaLink size={15} />
           </button>
-        </form>
+        </div>
         <p className="consent-message">
           By submitting your email address, you consent to receive email
           communication from US.
