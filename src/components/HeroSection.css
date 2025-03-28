@@ -1,40 +1,31 @@
 .hero-section {
-  background-color: fff;
-  background-image: url("./herosection-bg.png"); /* Add your background image */
-  background-size: contain; /* Ensure the image covers the entire section */
-  background-position: right; /* Center the background image */
+  background-color: #fff;
+
+  background-size: contain;
+  background-position: right; /* Image stays on the right */
   background-repeat: no-repeat;
-  padding: 100px 20px; /* Adjust padding as needed */
-  color: #333; /* Dark gray text */
-  text-align: left; /* Align content to the right */
+  padding: 100px 20px;
+  color: #000;
+  text-align: center; /* Only affects text inside .hero-content */
   display: flex;
-  justify-content: flex-start; /* Align content to the right */
-  align-items: center; /* Center content vertically */
-  min-height: 650px; /* Set a minimum height for the hero section */
+  justify-content: center; /* Center horizontally (replaced 'flex') */
+  align-items: center; /* Center vertically */
+  min-height: 650px;
+  font-weight: 700;
 }
 
 .hero-content {
-  max-width: 600px; /* Limit content width for better readability */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Semi-transparent white background for readability */
-  padding: 40px; /* Add padding to the content */
-  border-radius: 10px; /* Rounded corners */
+  max-width: 900px; /* Increased from 600px to 800px (or any value you prefer) */
+  background-color: rgba(247, 184, 1, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 33px;
+  margin: 0 auto; /* Ensures horizontal centering */
 }
 
 .hero-content h1 {
   font-size: 48px;
   margin-bottom: 20px;
-  font-weight: 700; /* Bold heading */
-}
-
-.hero-content h1 div {
-  font-size: 58px;
-  margin-bottom: 20px;
-  color: #3d348b;
   font-weight: 700; /* Bold heading */
 }
 

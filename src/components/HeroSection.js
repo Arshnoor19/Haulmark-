@@ -5,18 +5,11 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h1>
-          Fund your <div>Education!</div>
-        </h1>
-        <p className="hero-subtitle">Live your dream.</p>
-        <p className="hero-description"></p>
-        <button className="cta-button">GET STARTED</button>
-        <p className="hero-note">
-          Start the new year with <strong>low rates!</strong>
-        </p>
-        <p className="hero-award">
-          <strong>Some TEXT</strong>
-        </p>
+        Hull was founded in March 2024 by Dr. Manab Chakraborty, a serial social
+        entrepreneur with a dream to remove barriers to vocational education for
+        students hailing from low income and rural households. Hull is the
+        preferred partner who will students to access the necessary training
+        needed to achieve their dreams.
       </div>
     </section>
   );

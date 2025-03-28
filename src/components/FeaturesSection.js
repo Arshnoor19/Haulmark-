@@ -13,163 +13,230 @@ import {
 import "./FeaturesSection.css";
 
 const FeaturesSection = () => {
+  // Button click handlers for funding section
+  const handleButton1Click = () => {
+    console.log("Support button clicked");
+    // Add your navigation or action here
+    // Example: navigate('/support');
+  };
+
+  const handleButton2Click = () => {
+    console.log("Fast Process button clicked");
+    // Add your navigation or action here
+  };
+
+  const handleButton3Click = () => {
+    console.log("Quick Approval button clicked");
+    // Add your navigation or action here
+  };
+
+  const handleButton4Click = () => {
+    console.log("Global Funding button clicked");
+    // Add your navigation or action here
+  };
+
+  const handleButton5Click = () => {
+    console.log("Support button clicked");
+    // Add your navigation or action here
+    // Example: navigate('/support');
+  };
+
+  const handleButton6Click = () => {
+    console.log("Support button clicked");
+    // Add your navigation or action here
+    // Example: navigate('/support');
+  };
+
+  const handleButton7Click = () => {
+    console.log("Support button clicked");
+    // Add your navigation or action here
+    // Example: navigate('/support');
+  };
+
+  const handleApplicationClick = () => {
+    console.log("Application button clicked");
+    // Add your navigation or action here
+  };
+
+  const handleConnectClick = () => {
+    console.log("Connect button clicked");
+    // Add your navigation or action here
+  };
+
   return (
     <section className="features-section">
       {/* Section 1: Funding for International Students */}
       <div className="funding-section">
-        <h2>Flexible Funding Options</h2>
-
+        <h2>Take the next step with us?</h2>
         <p>
           Fixed-rate loans from US$2,001 to US$100,000 total at competitive
-          interest rates with up to 0.25% in interest rate discounts. Plus – we
-          don’t mind if you have loans from other lenders; you can still apply
-          for an loan!
+          interest rates with up to 0.25% in interest rate discounts.
         </p>
-        <div className="funding-grid">
-          <div className="funding-card">
-            <div className="card-icon">
-              <FaHandsHelping size={40} /> {/* Add the icon */}
+
+        <div className="funding-button-grid">
+          <button className="funding-button" onClick={handleButton1Click}>
+            <div className="button-icon">
+              <FaHandsHelping size={24} />
             </div>
-            <h3>Support Along the Way</h3>
-            <p>
-              Free visa support letters, exclusive career strategy services and
-              the potential for a conditional loan offer in a matter of days.
-            </p>
-          </div>
-          <div className="funding-card">
-            <div className="card-icon">
-              <FaAlgolia size={40} /> {/* Add the icon */}
+            <div className="button-content">
+              <h3>Apply for vocational student loan</h3>
             </div>
-            <h3>Our Fastest Process Yet</h3>
-            <p>
-              In just 30 seconds, see if you’re eligible to apply. From our
-              lightning-speed application process to our seamless disbursement,
-              we have you covered.
-            </p>
-          </div>
-          <div className="funding-card">
-            <div className="card-icon">
-              <FaHandsHelping size={40} /> {/* Add the icon */}
+          </button>
+
+          <button className="funding-button" onClick={handleButton2Click}>
+            <div className="button-icon">
+              <FaAlgolia size={24} />
             </div>
-            <h3>Support Along the Way</h3>
-            <p>
-              Free visa support letters, exclusive career strategy services and
-              the potential for a conditional loan offer in a matter of days.
-            </p>
-          </div>
-          <div className="funding-card">
-            <div className="card-icon">
-              <FaUsers size={40} /> {/* Add the icon */}
+            <div className="button-content">
+              <h3>Join our team</h3>
             </div>
-            <h3>Funding at Your Fingertips</h3>
-            <p>
-              Secure your loan faster than ever with quickest application yet,
-              available worldwide. Apply today for funding!
-            </p>
-          </div>
+          </button>
+
+          <button className="funding-button" onClick={handleButton3Click}>
+            <div className="button-icon">
+              <FaHandsHelping size={24} />
+            </div>
+            <div className="button-content">
+              <h3>Apply for a work tool loan</h3>
+            </div>
+          </button>
+
+          <button className="funding-button" onClick={handleButton4Click}>
+            <div className="button-icon">
+              <FaUsers size={24} />
+            </div>
+            <div className="button-content">
+              <h3>Talk to us</h3>
+            </div>
+          </button>
+
+          <button className="funding-button" onClick={handleButton5Click}>
+            <div className="button-icon">
+              <FaHandsHelping size={24} />
+            </div>
+            <div className="button-content">
+              <h3>Apply for carrier advancement</h3>
+            </div>
+          </button>
+
+          <button className="funding-button" onClick={handleButton6Click}>
+            <div className="button-icon">
+              <FaHandsHelping size={24} />
+            </div>
+            <div className="button-content">
+              <h3>Join our webinar</h3>
+            </div>
+          </button>
+
+          <button className="funding-button" onClick={handleButton7Click}>
+            <div className="button-icon">
+              <FaHandsHelping size={24} />
+            </div>
+            <div className="button-content">
+              <h3>Apply for a job</h3>
+            </div>
+          </button>
+          <button className="funding-button" onClick={handleButton7Click}>
+            <div className="button-icon">
+              <FaHandsHelping size={24} />
+            </div>
+            <div className="button-content">
+              <h3>EXTRA BUTTON</h3>
+            </div>
+          </button>
         </div>
       </div>
 
       {/* Section 2: What We've Achieved Together */}
-      <h2>What We've Achieved Together</h2>
-      <div className="features-grid">
-        <div className="feature-card">
-          <FaCheckCircle className="feature-icon" />
-          <h3>100%</h3>
-          <p>
-            A significant number of students reported that receiving a loan
-            played a crucial role in enabling them to pursue their education, as
-            it provided the necessary financial support to cover tuition fees,
-            living expenses, and other academic costs, ultimately allowing them
-            to focus on their studies without constant financial stress.
-          </p>
-        </div>
-        <div className="feature-card">
-          <FaUsers className="feature-icon" />
-          <h3>20,000+</h3>
-          <p>
-            A significant number of students reported that receiving a loan
-            played a crucial role in enabling them to pursue their education, as
-            it provided the necessary financial support to cover tuition fees,
-            living expenses, and other academic costs, ultimately allowing them
-            to focus on their studies without constant financial stress.
-          </p>
-        </div>
-        <div className="feature-card">
-          <FaGlobe className="feature-icon" />
-          <h3>190+</h3>
-          <p>
-            A significant number of students reported that receiving a loan
-            played a crucial role in enabling them to pursue their education, as
-            it provided the necessary financial support to cover tuition fees,
-            living expenses, and other academic costs, ultimately allowing them
-            to focus on their studies without constant financial stress.
-          </p>
-        </div>
-        <div className="feature-card">
-          <FaSchool className="feature-icon" />
-          <h3>500+</h3>
-          <p>
-            A significant number of students reported that receiving a loan
-            played a crucial role in enabling them to pursue their education, as
-            it provided the necessary financial support to cover tuition fees,
-            living expenses, and other academic costs, ultimately allowing them
-            to focus on their studies without constant financial stress.
-          </p>
-        </div>
-        <div className="feature-card">
-          <FaGraduationCap className="feature-icon" />
-          <h3>91%</h3>
-          <p>
-            A significant number of students reported that receiving a loan
-            played a crucial role in enabling them to pursue their education, as
-            it provided the necessary financial support to cover tuition fees,
-            living expenses, and other academic costs, ultimately allowing them
-            to focus on their studies without constant financial stress.
-          </p>
-        </div>
-        <div className="feature-card">
-          <FaUserGraduate className="feature-icon" />
-          <h3>45%</h3>
-          <p>
-            A significant number of students reported that receiving a loan
-            played a crucial role in enabling them to pursue their education, as
-            it provided the necessary financial support to cover tuition fees,
-            living expenses, and other academic costs, ultimately allowing them
-            to focus on their studies without constant financial stress.
-          </p>
+      <div className="achievements-section">
+        <h2>What We've Achieved Together</h2>
+        <div className="features-grid">
+          <div className="feature-card">
+            <FaCheckCircle className="feature-icon" />
+            <h3>100%</h3>
+            <p>
+              A significant number of students reported that receiving a loan
+              played a crucial role in enabling them to pursue their education.
+            </p>
+          </div>
+          <div className="feature-card">
+            <FaUsers className="feature-icon" />
+            <h3>20,000+</h3>
+            <p>
+              Students supported in achieving their educational dreams through
+              our financial assistance programs.
+            </p>
+          </div>
+          <div className="feature-card">
+            <FaGlobe className="feature-icon" />
+            <h3>190+</h3>
+            <p>
+              Countries represented by students who have benefited from our
+              funding solutions.
+            </p>
+          </div>
+          <div className="feature-card">
+            <FaSchool className="feature-icon" />
+            <h3>500+</h3>
+            <p>
+              Partner institutions worldwide where our students have
+              successfully enrolled.
+            </p>
+          </div>
+          <div className="feature-card">
+            <FaGraduationCap className="feature-icon" />
+            <h3>91%</h3>
+            <p>
+              Graduation rate among students who utilized our funding programs.
+            </p>
+          </div>
+          <div className="feature-card">
+            <FaUserGraduate className="feature-icon" />
+            <h3>45%</h3>
+            <p>
+              Students who reported career advancement within one year of
+              graduation.
+            </p>
+          </div>
         </div>
       </div>
 
+      {/* Section 3: Application CTA */}
       <div className="application-box">
         <div className="application-section">
           <div className="application-content">
             <h2>Ready to Take the Next Step?</h2>
             <p>
               Start your application today and join thousands of students who
-              have achieved their dreams with Financing.
+              have achieved their dreams with our financing.
             </p>
-            <button className="application-button">
+            <button
+              className="application-button"
+              onClick={handleApplicationClick}
+            >
               Start Your Application
             </button>
           </div>
         </div>
       </div>
 
-      {/* Section 3: Newsletter Signup */}
+      {/* Section 4: Newsletter Signup */}
       <div className="newsletter-section">
         <div className="newsletter-form">
           <h2>Join the Live Webinars!</h2>
-
-          <button type="submit" className="submit-button">
+          <button
+            type="button"
+            className="submit-button"
+            onClick={handleConnectClick}
+          >
             CONNECT
             <FaLink size={15} />
           </button>
         </div>
-        <p className="consent-message"></p>
+        <p className="consent-message">
+          Learn about funding opportunities directly from our experts
+        </p>
       </div>
-
-      {/* Section 4: Start Your Application */}
     </section>
   );
 };

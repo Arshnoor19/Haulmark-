@@ -1,27 +1,55 @@
-import React from "react";
-import Header from "./components/Header"; // Import the Header component
-import HeroSection from "./components/HeroSection"; // Import the HeroSection component
-import FeaturesSection from "./components/FeaturesSection"; // Import the FeaturesSection component
-import Footer from "./components/Footer"; // Import the Footer component
-import "./App.css"; // Import global styles
+import React, { useRef } from "react";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import FeaturesSection from "./components/FeaturesSection";
+import Footer from "./components/Footer";
+import "./App.css";
 import BottomSection from "./components/BottomSection";
+import Commitment from "./components/Commitment";
 
 function App() {
+  // Refs must be created at the top level
+  const heroRef = useRef(null);
+  const featuresRef = useRef(null);
+  const bottomRef = useRef(null);
+  const commitmentRef = useRef(null);
+
+  // Scroll function must receive the REF, not a string
+  const scrollToSection = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start", // Ensures alignment at top
+      });
+    }
+  };
+
   return (
     <div className="App">
-      {/* Header */}
-      <Header />
+      <Header
+        scrollToHero={() => scrollToSection(heroRef)}
+        scrollToFeatures={() => scrollToSection(featuresRef)}
+        scrollToBottom={() => scrollToSection(bottomRef)}
+        scrollToCommitment={() => scrollToSection(commitmentRef)}
+      />
 
-      {/* Hero Section */}
-      <HeroSection />
+      {/* Refs must be on DOM elements, not components */}
+      <section ref={heroRef} id="home">
+        <HeroSection />
+      </section>
 
-      {/* Features Section */}
-      <FeaturesSection />
+      <section ref={featuresRef} id="features">
+        <FeaturesSection />
+      </section>
 
-      {/* Bottom Menu */}
-      <BottomSection />
+      <section ref={commitmentRef} id="commitment">
+        <Commitment />
+      </section>
 
-      {/* Footer */}
+      <section ref={bottomRef} id="contact">
+        <BottomSection />
+      </section>
+
       <Footer />
     </div>
   );

@@ -50,3 +50,24 @@ body {
 main {
   padding: 20px;
 }
+
+/* Ensure no parent divs block scrolling */
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Account for fixed header */
+section {
+  scroll-margin-top: 80px; /* Match header height */
+}
+
+/* Optional: Fix for mobile */
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 60px;
+  }
+}
