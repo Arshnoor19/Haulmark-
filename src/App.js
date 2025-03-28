@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import "./App.css";
 import BottomSection from "./components/BottomSection";
 import Commitment from "./components/Commitment";
+import PeopleSection from "./components/People";
 
 function App() {
   // Refs must be created at the top level
@@ -13,6 +14,7 @@ function App() {
   const featuresRef = useRef(null);
   const bottomRef = useRef(null);
   const commitmentRef = useRef(null);
+  const PeopleRef = useRef(null);
 
   // Scroll function must receive the REF, not a string
   const scrollToSection = (ref) => {
@@ -31,6 +33,7 @@ function App() {
         scrollToFeatures={() => scrollToSection(featuresRef)}
         scrollToBottom={() => scrollToSection(bottomRef)}
         scrollToCommitment={() => scrollToSection(commitmentRef)}
+        scrollToPeople={() => scrollToSection(PeopleRef)}
       />
 
       {/* Refs must be on DOM elements, not components */}
@@ -44,6 +47,10 @@ function App() {
 
       <section ref={commitmentRef} id="commitment">
         <Commitment />
+      </section>
+
+      <section ref={PeopleRef} id="People">
+        <PeopleSection />
       </section>
 
       <section ref={bottomRef} id="contact">

@@ -1,0 +1,54 @@
+<div className="application-box">
+        <div className="application-section">
+          <div className="application-content">
+            <h2>Ready to Take the Next Step?</h2>
+            <p>
+              Start your application today and join thousands of students who
+              have achieved their dreams with our financing.
+            </p>
+            <button
+              className="application-button"
+              onClick={handleApplicationClick}
+            >
+              Start Your Application
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+above can be used as a box with button and then may be as a form 
+
+
+<div className="team-category">
+        <h3>Engineering Team</h3>
+        <div className="team-grid">
+          <div className="team-member">
+            <div className="member-photo"></div>
+            <h4>Priya Patel</h4>
+            <p>Lead Engineer</p>
+          </div>
+          <div className="team-member">
+            <div className="member-photo"></div>
+            <h4>David Kim</h4>
+            <p>Frontend Developer</p>
+          </div>
+          <div className="team-member">
+            <div className="member-photo"></div>
+            <h4>Emma Wilson</h4>
+            <p>Backend Developer</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      so above code can be used as team memebers sections liek the one with the technical skill section
+
+      <img 
+  src="/path-to-photo.jpg" 
+  alt="Team Member" 
+  className="member-photo"
+/>
+
+so add this part when the actual pic of the ourpeople will be placed put it   "To add actual photos, replace the .member-photo div with:" 

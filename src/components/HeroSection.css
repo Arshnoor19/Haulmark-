@@ -1,26 +1,74 @@
 .hero-section {
   background-color: #fff;
-
-  background-size: contain;
-  background-position: right; /* Image stays on the right */
+  background-image: url("./herosection-bg1.png");
+  background-size: cover;
+  background-position: right;
   background-repeat: no-repeat;
   padding: 100px 20px;
   color: #000;
-  text-align: center; /* Only affects text inside .hero-content */
   display: flex;
-  justify-content: center; /* Center horizontally (replaced 'flex') */
-  align-items: center; /* Center vertically */
+  align-items: center;
   min-height: 650px;
   font-weight: 700;
+  position: relative; /* Added for positioning */
 }
 
+/* Profile picture container */
+.profile-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-right: 50px; /* Space between image and content */
+}
+
+.profile-pic {
+  width: 350px;
+  margin-left: 450px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #f7b801; /* Yellow border */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Updated hero content */
 .hero-content {
-  max-width: 900px; /* Increased from 600px to 800px (or any value you prefer) */
-  background-color: rgba(247, 184, 1, 0.5);
+  font-family: "Inter", sans-serif;
+  width: 60%;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 40px;
+  text-align: left;
   border-radius: 10px;
   font-size: 33px;
-  margin: 0 auto; /* Ensures horizontal centering */
+  margin: 0;
+  font-weight: 900;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .profile-container,
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .profile-container {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .hero-content h1 {

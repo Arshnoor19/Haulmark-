@@ -6,6 +6,7 @@ function Header({
   scrollToFeatures,
   scrollToBottom,
   scrollToCommitment,
+  scrollToPeople,
 }) {
   return (
     <header className="header">
@@ -30,6 +31,11 @@ function Header({
           <li>
             <button className="nav-button" onClick={scrollToCommitment}>
               Our commitment
+            </button>
+          </li>
+          <li>
+            <button className="nav-button" onClick={scrollToPeople}>
+              Our People
             </button>
           </li>
         </ul>
