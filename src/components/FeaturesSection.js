@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  FaCheckCircle,
-  FaUsers,
-  FaGlobe,
-  FaSchool,
-  FaGraduationCap,
-  FaUserGraduate,
-  FaHandsHelping,
-  FaAlgolia,
-  FaLink,
-} from "react-icons/fa";
+import { FaUsers, FaHandsHelping, FaAlgolia } from "react-icons/fa";
 import "./FeaturesSection.css";
 
 const FeaturesSection = () => {
@@ -51,16 +41,6 @@ const FeaturesSection = () => {
     console.log("Support button clicked");
     // Add your navigation or action here
     // Example: navigate('/support');
-  };
-
-  const handleApplicationClick = () => {
-    console.log("Application button clicked");
-    // Add your navigation or action here
-  };
-
-  const handleConnectClick = () => {
-    console.log("Connect button clicked");
-    // Add your navigation or action here
   };
 
   return (
@@ -145,97 +125,6 @@ const FeaturesSection = () => {
             </div>
           </button>
         </div>
-      </div>
-
-      {/* Section 2: What We've Achieved Together */}
-      <div className="achievements-section">
-        <h2>What We've Achieved Together</h2>
-        <div className="features-grid">
-          <div className="feature-card">
-            <FaCheckCircle className="feature-icon" />
-            <h3>100%</h3>
-            <p>
-              A significant number of students reported that receiving a loan
-              played a crucial role in enabling them to pursue their education.
-            </p>
-          </div>
-          <div className="feature-card">
-            <FaUsers className="feature-icon" />
-            <h3>20,000+</h3>
-            <p>
-              Students supported in achieving their educational dreams through
-              our financial assistance programs.
-            </p>
-          </div>
-          <div className="feature-card">
-            <FaGlobe className="feature-icon" />
-            <h3>190+</h3>
-            <p>
-              Countries represented by students who have benefited from our
-              funding solutions.
-            </p>
-          </div>
-          <div className="feature-card">
-            <FaSchool className="feature-icon" />
-            <h3>500+</h3>
-            <p>
-              Partner institutions worldwide where our students have
-              successfully enrolled.
-            </p>
-          </div>
-          <div className="feature-card">
-            <FaGraduationCap className="feature-icon" />
-            <h3>91%</h3>
-            <p>
-              Graduation rate among students who utilized our funding programs.
-            </p>
-          </div>
-          <div className="feature-card">
-            <FaUserGraduate className="feature-icon" />
-            <h3>45%</h3>
-            <p>
-              Students who reported career advancement within one year of
-              graduation.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Section 3: Application CTA */}
-      <div className="application-box">
-        <div className="application-section">
-          <div className="application-content">
-            <h2>Ready to Take the Next Step?</h2>
-            <p>
-              Start your application today and join thousands of students who
-              have achieved their dreams with our financing.
-            </p>
-            <button
-              className="application-button"
-              onClick={handleApplicationClick}
-            >
-              Start Your Application
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Section 4: Newsletter Signup */}
-      <div className="newsletter-section">
-        <div className="newsletter-form">
-          <h2>Join the Live Webinars!</h2>
-          <button
-            type="button"
-            className="submit-button"
-            onClick={handleConnectClick}
-          >
-            CONNECT
-            <FaLink size={15} />
-          </button>
-        </div>
-        <p className="consent-message">
-          Learn about funding opportunities directly from our experts
-        </p>
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import "./People.css";
 import { FaLinkedin } from "react-icons/fa";
+import profile from "./hull-head.jpg";
 
 const PeopleSection = () => {
   return (
@@ -11,7 +12,7 @@ const PeopleSection = () => {
         <h3>Board Of Directors</h3>
         <div className="team-grid">
           <div className="team-member">
-            <div className="member-photo"></div>
+            <img src={profile} alt="Team Member" className="member-photo" />
             <h4>Dr. Manab Chakraborty</h4>
             <p>Director and Executive Chair</p>
             <p>
