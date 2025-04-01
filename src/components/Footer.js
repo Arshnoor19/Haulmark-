@@ -6,8 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>Indian Office Location </h3>
-          <p>Contact us</p>
+          <h2>Contact us</h2>
 
           <ul>
             <li>
